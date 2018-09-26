@@ -1,6 +1,10 @@
 %!TEX TS-program = xelatex
-\documentclass[]{friggeri-cv}
-\addbibresource{bibliog raphy.bib}
+\documentclass[]{friggeri-cv} %Thanks for the template, Mr Friggeri
+\addbibresource{bibliography.bib}
+\usepackage[LGR,T1]{fontenc}
+\usepackage[utf8]{inputenc}   % utf8 is required
+
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
 
 \begin{document}
 \header{frank}{singel}
@@ -23,10 +27,13 @@
     JavaScript
     (ES5, D\=oj\=o)
     Python 2
+    SQL
+  \section{other skills}
+    Heap/Thread Analysis
+    JUnit
+    Hibernate
+    Ant
 \end{aside}
-
-\section{activities}
- Theta \Chi Fraternity, ice hockey, Magic: The Gathering
 
 \section{education}
 
@@ -42,59 +49,31 @@
 
 \begin{entrylist}
   \entry
-    {02 2015-now}
-    {LIP6/CNRS, Paris}
+    {2015 current}
+    {UrbanCode, Cleveland}
     {Software Engineer.}
-    {\emph{Visualization of complex networks.}}
+    {\emph{Lorem Ipsum.}}
   \entry
     {05-08 2014}
-    {ISCPIF/CNRS, Paris}
+    {MIM Software, Cleveland}
     {Software Development Internship.}
-    {\emph{Diffusion in the Blogosphere. Happy Flu.}}
+    {\emph{Lorem Ipsum.}}
   \entry
     {05–08 2013}
-    {LIP6/CNRS, Paris}
-    {Summer Internship.}
-    {\emph{Kernels in real world networks.}}
+    {Rockwell Automation, Cleveland}
+    {Software Test Internship.}
+    {\emph{Lorem Ipsum.}}
   \entry
-    {05–12 2013}
-    {\href{http://www.kelkoo.com}{Kelkoo.com}}
-    {Co-op.}
-    {\emph{Creation of a keyword generator for Google Adwords.}}
+    {05–12 2012}
+    {Rockwell Automation, Cleveland}
+    {Software Development Co-op.}
+    {\emph{Lorem Ipsum.}}
 \end{entrylist}
 
-\section{applications}
-
-\begin{entrylist}
-  \entry
-    {2012}
-    {Who did I forget ?}
-    {\href{http://whodidiforget.com}{whodidiforget.com}}
-    {Guest list recommendation for Facebook events based on friends already attending the event.}
-  \entry
-    {2011}
-    {Fellows}
-    {\href{http://fellows-exp.com}{fellows-exp.com}}
-    {Automatic community detection among Facebook Friends in order to validate the \emph{cohesion} measure, creation of friend lists.}
-  \entry
-    {2008}
-    {Happy Flu}
-    {\href{http://happyflu.com}{happyflu.com}}
-    {Experiment aimed to measure viral spreading of content across the blogosphere.}
-\end{entrylist}
-
-%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
-% 
-%\printbibsection{article}{article in peer-reviewed journal}
-%\begin{refsection}
-%  \nocite{*}
-%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-%\end{refsection}
-%\begin{refsection}
-%  \nocite{*}
-%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-%\end{refsection}
-%\printbibsection{misc}{other publications}
-%\printbibsection{report}{research reports}
-
+\section{activities}
+\begin{itemize}
+    \item Theta Chi Fraternity
+    \item CWRU Ice Hockey
+    \item Magic: The Gathering
+\end{itemize}
 \end{document}
