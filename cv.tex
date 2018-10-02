@@ -1,14 +1,10 @@
 %!TEX TS-program = xelatex
-\documentclass[]{friggeri-cv} %Thanks for the template, Mr Friggeri
+\documentclass[]{friggeri-cv}
 \addbibresource{bibliography.bib}
-\usepackage[LGR,T1]{fontenc}
-\usepackage[utf8]{inputenc}   % utf8 is required
-
-\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
 
 \begin{document}
 \header{frank}{singel}
-       {software engineer}
+       {Software Engineer}
 
 
 % In the aside, each new line forces a line break
@@ -19,20 +15,18 @@
     44114
     ~
     \href{mailto:fjs52@case.edu}{fjs52@case.edu}
-  \section{languages}
-    english
-    passable french
   \section{programming}
     {\color{red} $\varheartsuit$} Java
     JavaScript
-    (ES5, D\=oj\=o)
-    Python 2
-    SQL
+    (ES5, d\={o}j\={o})
+    Python, SQL
+  \section{frameworks}
+    Hibernate ORM, Ant
+    jUnit (BDD Mockito)
   \section{other skills}
-    Heap/Thread Analysis
-    JUnit
-    Hibernate
-    Ant
+    Git, Eclipse
+    AppScan Security Testing
+    Thread/Heap Dump Analysis
 \end{aside}
 
 \section{education}
@@ -40,9 +34,9 @@
 \begin{entrylist}
   \entry
     {2010–2014}
-    {Case Western Reserve University}
+    {B.S. in Computer Science}
     {Cleveland, OH}
-    {BS in Computer Science}
+    {Case Western Reserve University}
 \end{entrylist}
 
 \section{experience}
@@ -52,28 +46,55 @@
     {2015 current}
     {UrbanCode, Cleveland}
     {Software Engineer.}
-    {\emph{Lorem Ipsum.}}
+    {\emph{
+    •	Developed new features and helped developed tests for an on-prem web app.\\*
+    •	Worked closely with customers to resolve time sensitive and impactful issues. This often required learning about peculiarities of many tech stacks.\\*
+    •	Took charge of onboarding and mentoring interns. \\*
+    •	Advocated for, and performed, an audit on our product to locate and remove every XSS vulnerability.\\*
+    •	Owned our process for responsibly disclosing our security vulnerabilities.\\*
+    •	In charge of performing regular security scans of product.\\*
+}}
   \entry
     {05-08 2014}
     {MIM Software, Cleveland}
     {Software Development Internship.}
-    {\emph{Lorem Ipsum.}}
+    {\emph{
+    •	Developed and improved new features for MIM's primary medical imaging software. Also was responsible for defect resolution in an Agile development environment working primarily with Java, Swing, and JUnit.}}
   \entry
     {05–08 2013}
     {Rockwell Automation, Cleveland}
     {Software Test Internship.}
-    {\emph{Lorem Ipsum.}}
+    {\emph{
+    •	Developed virtual maintenance workstation software images for use with Rockwell’s PlantPax process visualization system software. Skills learned and exercised included independent management, OS virtualization, and efficient communication.}}
   \entry
     {05–12 2012}
     {Rockwell Automation, Cleveland}
     {Software Development Co-op.}
-    {\emph{Lorem Ipsum.}}
+    {\emph{
+    •	Responsible for development, testing, and defect resolution of new and existing features for Rockwell’s flagship Studio5000 industrial control system design and configuration software.  Experiences included use of C++, perl, HTML, and Javascript.}}
 \end{entrylist}
 
-\section{activities}
+\section{interests}
+
 \begin{itemize}
-    \item Theta Chi Fraternity
-    \item CWRU Ice Hockey
-    \item Magic: The Gathering
+  \item Case Western Reserve Ice Hockey Team
+  \item Magic: The Gathering L2 Judge
+  \item Software Application Security
+  \item Theta Chi Fraternity
 \end{itemize}
+
+%%% This piece of code has been commented by Karol Kozioł due to biblatex errors. 
+% 
+%\printbibsection{article}{article in peer-reviewed journal}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
+%\end{refsection}
+%\begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
+%\end{refsection}
+%\printbibsection{misc}{other publications}
+%\printbibsection{report}{research reports}
+
 \end{document}
