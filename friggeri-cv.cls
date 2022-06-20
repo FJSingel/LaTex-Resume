@@ -164,7 +164,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{12.8cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
@@ -177,7 +177,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
+\setlength{\TPHorizModule}{.95cm}
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
@@ -310,5 +310,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.5cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
