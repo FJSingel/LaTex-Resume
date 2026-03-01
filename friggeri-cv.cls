@@ -180,7 +180,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \setlength{\TPHorizModule}{.95cm}
 \setlength{\TPVertModule}{1cm}
 \newcommand{\invisiblesection}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{white} #1}
+    \par\vspace{\baselineskip}{\tiny\headingfont\color{white} #1}
 }
 \newenvironment{aside}{%
   \let\oldsection\section
