@@ -179,13 +179,13 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \RequirePackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{.95cm}
 \setlength{\TPVertModule}{1cm}
+\newcommand{\invisiblesection}[1]{
+    \par\vspace{\baselineskip}{\Large\headingfont\color{white} #1}
+}
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
-  }
-  \renewcommand{\invisiblesection}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{white} ##1}
   }
   \begin{textblock}{3.6}(1.5, 4.33)
   \begin{flushright}
